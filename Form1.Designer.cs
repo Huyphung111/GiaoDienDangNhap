@@ -51,6 +51,7 @@
             this.btn_taotaikhoang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_doimatkhau = new System.Windows.Forms.Button();
             this.check_hienmatkhau = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
@@ -168,7 +169,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(544, 31);
             this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Tài Khoảng";
+            this.textBox1.Text = "Tài Khoản";
             this.textBox1.Click += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -288,9 +289,9 @@
             this.btn_taotaikhoang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_taotaikhoang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_taotaikhoang.Image = global::GiaoDienDangNhap.Properties.Resources.Ảnh_chụp_màn_hình_2025_11_13_1008272;
-            this.btn_taotaikhoang.Location = new System.Drawing.Point(36, 202);
+            this.btn_taotaikhoang.Location = new System.Drawing.Point(36, 216);
             this.btn_taotaikhoang.Name = "btn_taotaikhoang";
-            this.btn_taotaikhoang.Size = new System.Drawing.Size(136, 58);
+            this.btn_taotaikhoang.Size = new System.Drawing.Size(133, 44);
             this.btn_taotaikhoang.TabIndex = 13;
             this.btn_taotaikhoang.Text = "Tạo tài khoảng";
             this.btn_taotaikhoang.UseVisualStyleBackColor = false;
@@ -312,6 +313,7 @@
             // panel9
             // 
             this.panel9.BackgroundImage = global::GiaoDienDangNhap.Properties.Resources.Ảnh_chụp_màn_hình_2025_11_13_100827;
+            this.panel9.Controls.Add(this.btn_doimatkhau);
             this.panel9.Controls.Add(this.check_hienmatkhau);
             this.panel9.Controls.Add(this.btn_taotaikhoang);
             this.panel9.Controls.Add(this.pictureBox1);
@@ -325,6 +327,22 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(636, 275);
             this.panel9.TabIndex = 14;
+            // 
+            // btn_doimatkhau
+            // 
+            this.btn_doimatkhau.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_doimatkhau.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_doimatkhau.BackgroundImage")));
+            this.btn_doimatkhau.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_doimatkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_doimatkhau.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_doimatkhau.Image = global::GiaoDienDangNhap.Properties.Resources.Ảnh_chụp_màn_hình_2025_11_13_1008272;
+            this.btn_doimatkhau.Location = new System.Drawing.Point(463, 219);
+            this.btn_doimatkhau.Name = "btn_doimatkhau";
+            this.btn_doimatkhau.Size = new System.Drawing.Size(126, 39);
+            this.btn_doimatkhau.TabIndex = 14;
+            this.btn_doimatkhau.Text = "Đổi mật khẩu";
+            this.btn_doimatkhau.UseVisualStyleBackColor = false;
+            this.btn_doimatkhau.Click += new System.EventHandler(this.btn_doimatkhau_Click);
             // 
             // check_hienmatkhau
             // 
@@ -397,6 +415,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.CheckBox check_hienmatkhau;
+        private System.Windows.Forms.Button btn_doimatkhau;
     }
 }
 

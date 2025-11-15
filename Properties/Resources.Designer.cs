@@ -443,6 +443,16 @@ namespace GiaoDienDangNhap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_l6tfxbl6tfxbl6tf1 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_l6tfxbl6tfxbl6tf1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_login_password_user_lock_and_key_share_icon_security_blue_padlock_png_clipart {
             get {
                 object obj = ResourceManager.GetObject("icon-login-password-user-lock-and-key-share-icon-security-blue-padlock-png-clipar" +
@@ -567,6 +577,16 @@ namespace GiaoDienDangNhap.Properties {
         internal static System.Drawing.Bitmap unnamed__3_5 {
             get {
                 object obj = ResourceManager.GetObject("unnamed (3)5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed__3_6 {
+            get {
+                object obj = ResourceManager.GetObject("unnamed (3)6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

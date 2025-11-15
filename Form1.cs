@@ -273,5 +273,94 @@ namespace GiaoDienDangNhap
                 textBox2.PasswordChar = '*'; // '*' = ẩn mật khẩu bằng dấu *
             }
         }
+
+        // ===================================================================
+        // THÊM CODE NÀY VÀO FORM1.CS
+        // ===================================================================
+
+        // Chức năng mở Form DoiMatKhau để đổi mật khẩu
+        private void btn_doimatkhau_Click(object sender, EventArgs e)
+        {
+            // Ẩn Form1 (form đăng nhập)
+            this.Hide();
+
+            // Tạo và hiển thị form đổi mật khẩu
+            DoiMatKhau doiMatKhauForm = new DoiMatKhau();
+            doiMatKhauForm.ShowDialog(); // ShowDialog = hiển thị dạng modal (phải đóng mới làm việc khác)
+
+            // Sau khi đóng form đổi mật khẩu, hiện lại Form1
+            this.Show();
+
+            // Làm mới các trường nhập liệu
+            textBox1.Clear();
+            textBox2.Clear();
+            txt_tdn.Visible = false;
+            txt_matkhau.Visible = false;
+        }
+
+
+        // ===================================================================
+        // HOẶC NẾU BẠN MUỐN KIỂM TRA TRẠNG THÁI ĐĂNG NHẬP TRƯỚC KHI ĐỔI:
+        // ===================================================================
+
+        // Biến lưu trạng thái đăng nhập (thêm vào đầu class Form1)
+        private static bool isDangNhap = false;
+        private static string currentUsername = "";
+
+        // Cập nhật lại hàm button1_Click (nút Đăng nhập) - thêm sau khi đăng nhập thành công:
+        /*
+        if (KiemTraDangNhap(username, password, out hoTen, out maPhanQuyen))
+        {
+            // ... code cũ ...
+
+            // Lưu trạng thái đăng nhập
+            isDangNhap = true;
+            currentUsername = username;
+
+            // ... code cũ ...
+        }
+        */
+
+        // Phiên bản nâng cao của btn_doimatkhau_Click
+        private void btn_doimatkhau_Click_Advanced(object sender, EventArgs e)
+        {
+            // OPTION 1: Cho phép đổi mật khẩu mà không cần đăng nhập
+            // (Người dùng phải nhập đúng tài khoản + mật khẩu hiện tại trong form đổi mật khẩu)
+
+            this.Hide();
+            DoiMatKhau doiMatKhauForm = new DoiMatKhau();
+            doiMatKhauForm.ShowDialog();
+            this.Show();
+
+            // Làm mới form
+            textBox1.Clear();
+            textBox2.Clear();
+            txt_tdn.Visible = false;
+            txt_matkhau.Visible = false;
+        }
+
+        private void btn_doimatkhau_Click_RequireLogin(object sender, EventArgs e)
+        {
+            // Kiểm tra đã đăng nhập chưa
+            if (!isDangNhap)
+            {
+                MessageBox.Show("Vui lòng đăng nhập trước khi đổi mật khẩu!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Nếu đã đăng nhập, mở form đổi mật khẩu
+            this.Hide();
+            DoiMatKhau doiMatKhauForm = new DoiMatKhau();
+
+            // Có thể truyền username vào form đổi mật khẩu để tự động điền
+            // (Cần thêm property public string Username trong DoiMatKhau)
+            // doiMatKhauForm.Username = currentUsername;
+
+            doiMatKhauForm.ShowDialog();
+            this.Show();
+        }
     }
 }

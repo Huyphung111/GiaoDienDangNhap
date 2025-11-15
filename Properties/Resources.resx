@@ -197,7 +197,7 @@
     <value>..\Resources\unnamed (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ảnh chụp màn hình 2025-11-13 10082710" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ảnh chụp màn hình 2025-11-13 10082718.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Ảnh chụp màn hình 2025-11-13 10082719.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ảnh chụp màn hình 2025-11-13 1008279" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ảnh chụp màn hình 2025-11-13 1008279.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,6 +265,9 @@
   <data name="Ảnh chụp màn hình 2025-11-11 123052" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ảnh chụp màn hình 2025-11-11 123052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Gemini_Generated_Image_l6tfxbl6tfxbl6tf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_l6tfxbl6tfxbl6tf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="unnamed (3)5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed (3)5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -277,7 +280,7 @@
   <data name="Ảnh chụp màn hình 2025-11-10 140501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ảnh chụp màn hình 2025-11-10 140501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ảnh chụp màn hình 2025-11-13 10082710" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ảnh chụp màn hình 2025-11-13 10082719.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unnamed (3)6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed (3)6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
