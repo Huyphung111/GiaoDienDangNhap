@@ -62,6 +62,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_taikhoan = new System.Windows.Forms.TextBox();
+            this.ck_hien = new System.Windows.Forms.CheckBox();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -431,12 +432,24 @@
             this.txt_taikhoan.Text = "Tài Khoản";
             this.txt_taikhoan.TextChanged += new System.EventHandler(this.txt_taikhoan_TextChanged);
             // 
+            // ck_hien
+            // 
+            this.ck_hien.AutoSize = true;
+            this.ck_hien.Location = new System.Drawing.Point(515, 339);
+            this.ck_hien.Name = "ck_hien";
+            this.ck_hien.Size = new System.Drawing.Size(72, 24);
+            this.ck_hien.TabIndex = 44;
+            this.ck_hien.Text = "Hiện ";
+            this.ck_hien.UseVisualStyleBackColor = true;
+            this.ck_hien.CheckedChanged += new System.EventHandler(this.ck_hien_CheckedChanged);
+            // 
             // DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GiaoDienDangNhap.Properties.Resources.unnamed__3_6;
             this.ClientSize = new System.Drawing.Size(1020, 507);
+            this.Controls.Add(this.ck_hien);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.matkhaunhaplaikhongdung);
             this.Controls.Add(this.label9);
@@ -513,5 +526,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txt_taikhoan;
+        private System.Windows.Forms.CheckBox ck_hien;
     }
 }

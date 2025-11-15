@@ -314,5 +314,23 @@ namespace GiaoDienDangNhap
         {
             // Event handler cho label lỗi
         }
+
+        private void ck_hien_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ck_hien.Checked)
+            {
+                // Hiện mật khẩu
+                txt_matkhauhientai.PasswordChar = '\0';
+                txt_nhapmatkhaumoi.PasswordChar = '\0';
+                txt_nhaplai.PasswordChar = '\0';
+            }
+            else
+            {
+                // Ẩn mật khẩu (hiện dấu *)
+                txt_matkhauhientai.PasswordChar = '*';
+                txt_nhapmatkhaumoi.PasswordChar = '*';
+                txt_nhaplai.PasswordChar = '*';
+            }
+        }
     }
 }
