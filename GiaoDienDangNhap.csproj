@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,6 +81,12 @@
     <Compile Include="ThuCungGiaoDien.Designer.cs">
       <DependentUpon>ThuCungGiaoDien.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrangTaiKhoang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangTaiKhoang.Designer.cs">
+      <DependentUpon>TrangTaiKhoang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="ThuCungGiaoDien.resx">
       <DependentUpon>ThuCungGiaoDien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangTaiKhoang.resx">
+      <DependentUpon>TrangTaiKhoang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -307,6 +319,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unnamed %283%296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2025-11-13 10082720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2025-11-13 10082721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2025-11-17 141540.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

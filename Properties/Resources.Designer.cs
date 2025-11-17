@@ -83,6 +83,16 @@ namespace GiaoDienDangNhap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2025_09_27_221446 {
             get {
                 object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2025-09-27 221446", resourceCulture);
@@ -423,6 +433,16 @@ namespace GiaoDienDangNhap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ảnh_chụp_màn_hình_2025_11_17_141540 {
+            get {
+                object obj = ResourceManager.GetObject("Ảnh chụp màn hình 2025-11-17 141540", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_czp121czp121czp1 {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_czp121czp121czp1", resourceCulture);
@@ -497,6 +517,16 @@ namespace GiaoDienDangNhap.Properties {
         internal static System.Drawing.Bitmap pawprint__1_ {
             get {
                 object obj = ResourceManager.GetObject("pawprint (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove {
+            get {
+                object obj = ResourceManager.GetObject("remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

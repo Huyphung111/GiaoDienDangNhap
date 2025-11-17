@@ -26,6 +26,9 @@ namespace GiaoDienDangNhap
         {
         }
 
+        // ═══════════════════════════════════════════════════════════
+        // NÚT THÚ CƯNG
+        // ═══════════════════════════════════════════════════════════
         private void button1_Click(object sender, EventArgs e)
         {
             // Xóa các control cũ trong panel (nếu có)
@@ -46,6 +49,29 @@ namespace GiaoDienDangNhap
             formThuCung.Show();
         }
 
+        // ═══════════════════════════════════════════════════════════
+        // NÚT TÀI KHOẢN
+        // ═══════════════════════════════════════════════════════════
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // Xóa các control cũ trong panel (nếu có)
+            panel_NoiDung.Controls.Clear();
 
+            // Tạo instance của form TrangQuanLyTaiKhoan
+            TrangQuanLyTaiKhoan formTaiKhoan = new TrangQuanLyTaiKhoan();
+
+            // Set các thuộc tính để form hiển thị như một control
+            formTaiKhoan.TopLevel = false;
+            formTaiKhoan.FormBorderStyle = FormBorderStyle.None;
+            formTaiKhoan.Dock = DockStyle.Fill;
+
+            // Thêm form vào panel
+            panel_NoiDung.Controls.Add(formTaiKhoan);
+
+            // Hiển thị form
+            formTaiKhoan.Show();
+        }
     }
 }
+
+
