@@ -14,7 +14,7 @@ namespace GiaoDienDangNhap
     public partial class Form1 : Form
     {
         // Connection String - THAY ĐỔI THEO CẤU HÌNH CỦA BẠN
-        private string connectionString = @"Data Source=HUYNE;Initial Catalog=QUANLY_PETSHOP_V3;Integrated Security=True;TrustServerCertificate=True";
+        private string connectionString = @"Data Source=HUYNE;Initial Catalog=QUANLY_PETSHOP_V9;Integrated Security=True;TrustServerCertificate=True";
         // Hoặc nếu dùng SQL Authentication:
         // private string connectionString = @"Data Source=YOUR_SERVER_NAME;Initial Catalog=QUANLY_PETSHOP_V3;User ID=sa;Password=your_password";
 

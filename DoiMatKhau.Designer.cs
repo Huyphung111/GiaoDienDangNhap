@@ -156,7 +156,7 @@
             this.txt_nhaplai.Multiline = true;
             this.txt_nhaplai.Name = "txt_nhaplai";
             this.txt_nhaplai.Size = new System.Drawing.Size(373, 56);
-            this.txt_nhaplai.TabIndex = 5;
+            this.txt_nhaplai.TabIndex = 0;
             this.txt_nhaplai.TextChanged += new System.EventHandler(this.txt_nhaplai_TextChanged);
             // 
             // txt_matkhaunhapsai
@@ -231,7 +231,7 @@
             this.matkhauitnhat6kitu.Location = new System.Drawing.Point(0, 0);
             this.matkhauitnhat6kitu.Name = "matkhauitnhat6kitu";
             this.matkhauitnhat6kitu.Size = new System.Drawing.Size(169, 20);
-            this.matkhauitnhat6kitu.TabIndex = 5;
+            this.matkhauitnhat6kitu.TabIndex = 0;
             this.matkhauitnhat6kitu.Text = "Mật khẩu ít nhất 6 kí tự";
             this.matkhauitnhat6kitu.Click += new System.EventHandler(this.matkhauitnhat6kitu_Click);
             // 
@@ -428,7 +428,7 @@
             this.txt_taikhoan.Multiline = true;
             this.txt_taikhoan.Name = "txt_taikhoan";
             this.txt_taikhoan.Size = new System.Drawing.Size(373, 31);
-            this.txt_taikhoan.TabIndex = 5;
+            this.txt_taikhoan.TabIndex = 1;
             this.txt_taikhoan.Text = "Tài Khoản";
             this.txt_taikhoan.TextChanged += new System.EventHandler(this.txt_taikhoan_TextChanged);
             // 

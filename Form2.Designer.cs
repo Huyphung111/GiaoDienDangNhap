@@ -99,6 +99,7 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "      PET SHOP";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 

@@ -9,7 +9,7 @@ namespace GiaoDienDangNhap
     public partial class Form2 : Form
     {
         // Connection String - THAY ĐỔI THEO CẤU HÌNH CỦA BẠN
-        private string connectionString = @"Data Source=HUYNE;Initial Catalog=QUANLY_PETSHOP_V3;Integrated Security=True;TrustServerCertificate=True";
+        private string connectionString = @"Data Source=HUYNE;Initial Catalog=QUANLY_PETSHOP_V9;Integrated Security=True;TrustServerCertificate=True";
 
         public Form2()
         {
@@ -152,7 +152,7 @@ namespace GiaoDienDangNhap
             }
         }
 
-        // HÀM THÊM TÀI KHOẢN MỚI VÀO SQL
+        // ✅ HÀM THÊM TÀI KHOẢN MỚI VÀO SQL - ĐÃ SỬA LỖI
         private bool ThemTaiKhoanVaoSQL(string username, string password, string email, string hoTen = "Khách hàng")
         {
             try
@@ -163,9 +163,10 @@ namespace GiaoDienDangNhap
 
                     // Tạo người dùng (mặc định là khách hàng)
                     string queryNguoiDung = @"INSERT INTO NguoiDung (TenDangNhap, MatKhau, HoTen, Email, MaPhanQuyen, TrangThai) 
-                                            VALUES (@username, @password, @hoTen, @email, 2, 1)
-                                            SELECT SCOPE_IDENTITY()";
+                                            VALUES (@username, @password, @hoTen, @email, 2, 1);
+                                            SELECT SCOPE_IDENTITY();";
 
+                    int maNguoiDung;
                     using (SqlCommand cmd = new SqlCommand(queryNguoiDung, conn))
                     {
                         cmd.Parameters.AddWithValue("@username", username);
@@ -173,16 +174,26 @@ namespace GiaoDienDangNhap
                         cmd.Parameters.AddWithValue("@hoTen", hoTen);
                         cmd.Parameters.AddWithValue("@email", email);
 
-                        int maNguoiDung = (int)Convert.ToInt32(cmd.ExecuteScalar());
+                        maNguoiDung = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
 
-                        // Tạo record khách hàng
-                        string queryKhachHang = "INSERT INTO KhachHang (MaNguoiDung) VALUES (@maNguoiDung)";
+                    // ✅ SỬA: Tạo MaKH tự động theo format KH + số thứ tự
+                    string queryGetMaxKH = "SELECT ISNULL(MAX(CAST(SUBSTRING(MaKH, 3, LEN(MaKH)) AS INT)), 0) FROM KhachHang WHERE MaKH LIKE 'KH%'";
+                    int maxNumber;
+                    using (SqlCommand cmd = new SqlCommand(queryGetMaxKH, conn))
+                    {
+                        maxNumber = (int)cmd.ExecuteScalar();
+                    }
 
-                        using (SqlCommand cmd2 = new SqlCommand(queryKhachHang, conn))
-                        {
-                            cmd2.Parameters.AddWithValue("@maNguoiDung", maNguoiDung);
-                            cmd2.ExecuteNonQuery();
-                        }
+                    string maKH = "KH" + (maxNumber + 1).ToString("D3"); // VD: KH001, KH002, KH003...
+
+                    // Tạo record khách hàng với MaKH
+                    string queryKhachHang = "INSERT INTO KhachHang (MaKH, MaNguoiDung) VALUES (@maKH, @maNguoiDung)";
+                    using (SqlCommand cmd2 = new SqlCommand(queryKhachHang, conn))
+                    {
+                        cmd2.Parameters.AddWithValue("@maKH", maKH);
+                        cmd2.Parameters.AddWithValue("@maNguoiDung", maNguoiDung);
+                        cmd2.ExecuteNonQuery();
                     }
 
                     return true;
@@ -364,6 +375,11 @@ namespace GiaoDienDangNhap
         }
 
         private void txt_emailkhongphuhop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

@@ -40,7 +40,7 @@ namespace GiaoDienDangNhap
     public partial class DoiMatKhau : Form
     {
         // Connection String - THAY ĐỔI THEO CẤU HÌNH CỦA BẠN
-        private string connectionString = @"Data Source=HUYNE;Initial Catalog=QUANLY_PETSHOP_V3;Integrated Security=True;TrustServerCertificate=True";
+        private string connectionString = @"Data Source=HUYNE;Initial Catalog=QUANLY_PETSHOP_V9;Integrated Security=True;TrustServerCertificate=True";
 
         public DoiMatKhau()
         {

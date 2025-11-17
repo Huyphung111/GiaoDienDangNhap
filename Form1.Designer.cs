@@ -101,7 +101,7 @@
             this.label2.Location = new System.Drawing.Point(220, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 20);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 1;
             // 
             // panel3
             // 
@@ -134,7 +134,7 @@
             this.txt_tdn.Location = new System.Drawing.Point(0, 0);
             this.txt_tdn.Name = "txt_tdn";
             this.txt_tdn.Size = new System.Drawing.Size(266, 20);
-            this.txt_tdn.TabIndex = 5;
+            this.txt_tdn.TabIndex = 0;
             this.txt_tdn.Text = "Tên đăng nhập không tồn tại, thử lại!";
             this.txt_tdn.Click += new System.EventHandler(this.txt_tdn_Click);
             // 
@@ -168,7 +168,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(544, 31);
-            this.textBox1.TabIndex = 5;
+            this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Tài Khoản";
             this.textBox1.Click += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -215,7 +215,7 @@
             this.txt_matkhau.Location = new System.Drawing.Point(0, 0);
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(266, 20);
-            this.txt_matkhau.TabIndex = 5;
+            this.txt_matkhau.TabIndex = 0;
             this.txt_matkhau.Text = "Tên đăng nhập không tồn tại, thử lại!";
             this.txt_matkhau.Click += new System.EventHandler(this.label3_Click);
             // 
@@ -247,7 +247,7 @@
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(500, 31);
-            this.textBox2.TabIndex = 5;
+            this.textBox2.TabIndex = 0;
             this.textBox2.Text = "Mật Khẩu";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -262,7 +262,7 @@
             this.button1.Location = new System.Drawing.Point(189, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 62);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Dang Nhap";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -292,7 +292,7 @@
             this.btn_taotaikhoang.Location = new System.Drawing.Point(36, 216);
             this.btn_taotaikhoang.Name = "btn_taotaikhoang";
             this.btn_taotaikhoang.Size = new System.Drawing.Size(133, 44);
-            this.btn_taotaikhoang.TabIndex = 13;
+            this.btn_taotaikhoang.TabIndex = 1;
             this.btn_taotaikhoang.Text = "Tạo tài khoảng";
             this.btn_taotaikhoang.UseVisualStyleBackColor = false;
             this.btn_taotaikhoang.Click += new System.EventHandler(this.btn_taotaikhoang_Click);
@@ -307,7 +307,7 @@
             this.label1.Location = new System.Drawing.Point(252, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 36);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "ĐĂNG NHẬP";
             // 
             // panel9
@@ -326,7 +326,7 @@
             this.panel9.Location = new System.Drawing.Point(9, 106);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(636, 275);
-            this.panel9.TabIndex = 14;
+            this.panel9.TabIndex = 0;
             // 
             // btn_doimatkhau
             // 
@@ -339,7 +339,7 @@
             this.btn_doimatkhau.Location = new System.Drawing.Point(463, 219);
             this.btn_doimatkhau.Name = "btn_doimatkhau";
             this.btn_doimatkhau.Size = new System.Drawing.Size(126, 39);
-            this.btn_doimatkhau.TabIndex = 14;
+            this.btn_doimatkhau.TabIndex = 3;
             this.btn_doimatkhau.Text = "Đổi mật khẩu";
             this.btn_doimatkhau.UseVisualStyleBackColor = false;
             this.btn_doimatkhau.Click += new System.EventHandler(this.btn_doimatkhau_Click);
@@ -351,7 +351,7 @@
             this.check_hienmatkhau.Location = new System.Drawing.Point(451, 186);
             this.check_hienmatkhau.Name = "check_hienmatkhau";
             this.check_hienmatkhau.Size = new System.Drawing.Size(138, 24);
-            this.check_hienmatkhau.TabIndex = 6;
+            this.check_hienmatkhau.TabIndex = 5;
             this.check_hienmatkhau.Text = "Hiện mật khẩu";
             this.check_hienmatkhau.UseVisualStyleBackColor = true;
             this.check_hienmatkhau.CheckedChanged += new System.EventHandler(this.check_hienmatkhau_CheckedChanged);
